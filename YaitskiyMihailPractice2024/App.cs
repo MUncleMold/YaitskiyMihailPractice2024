@@ -18,7 +18,7 @@ namespace Yaitskiy_Mihail_Practice
         {
             RibbonPanel ribbonPanel = application.CreateRibbonPanel("PillowCreater");
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
-            PushButtonData buttonData = new PushButtonData("Bleh", "Bleeeh", thisAssemblyPath, "Yaitskiy_Mihail_Practice.BreakColumnsCommand");
+            PushButtonData buttonData = new PushButtonData("Start", "Start", thisAssemblyPath, "Yaitskiy_Mihail_Practice.BreakColumnsCommand");
             PushButton pushbutton = ribbonPanel.AddItem(buttonData) as PushButton;
             
             return Result.Succeeded;
