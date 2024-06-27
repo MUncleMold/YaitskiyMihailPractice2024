@@ -20,9 +20,16 @@ namespace YaitskiyMihailPractice2024
     /// </summary>
     public partial class BreakColumnsView : Window
     {
+        public IList<ColumnToBreak> columnsToBreak = new List<ColumnToBreak>();
         public BreakColumnsView()
         {
             InitializeComponent();
+            DataContext = columnsToBreak;
+            dataGrid.ItemsSource = columnsToBreak;
+            //dataGrid.DataContext = columnsToBreak;
+            //window.DataContext = columnsToBreak;
+            
         }
     }
 }
+  
