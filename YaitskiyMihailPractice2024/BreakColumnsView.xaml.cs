@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autodesk.Revit.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,12 +25,13 @@ namespace YaitskiyMihailPractice2024
         public BreakColumnsView()
         {
             InitializeComponent();
-            DataContext = columnsToBreak;
             dataGrid.ItemsSource = columnsToBreak;
-            //dataGrid.DataContext = columnsToBreak;
-            //window.DataContext = columnsToBreak;
-            
         }
+        private void Button_click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Skibidi");
+        }
+        
     }
 }
   

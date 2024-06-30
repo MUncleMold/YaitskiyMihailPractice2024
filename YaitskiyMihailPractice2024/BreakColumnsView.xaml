@@ -4,28 +4,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YaitskiyMihailPractice2024"
-             mc:Ignorable="d" Height="358" Width="644" Title = "Таблицы колонн"
+             mc:Ignorable="d" Height="358" Width="644" Title = "Таблица колонн"
         x:Name="window"
 >
 
-    <Grid>
+    <Grid x:Name="Grid1">
 
         <DataGrid x:Name="dataGrid"
                   DataContext="Binding Source ={columnsToBreak}">
-            <!--<DataGrid.Columns>
-                <DataGridTextColumn Header = "Name" x:Name="Column1">
-                 
 
-                </DataGridTextColumn>
-                
-
-                <DataGridTextColumn Header="ColichestvoRaspilov"/>
-            </DataGrid.Columns>-->
             
 
         </DataGrid>
 
-        <!--<TextBlock Margin="257,128,319,196">Hello!</TextBlock>-->
+        <Button Width="30" Height="15" x:Name="Button1" Content="Chooo" Click ="button"></Button>
 
     </Grid>
+    
 </Window>
