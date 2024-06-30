@@ -17,7 +17,6 @@
 
         </DataGrid>
 
-        <Button Width="30" Height="15" x:Name="Button1" Content="Chooo" Click ="button"></Button>
 
     </Grid>
     
