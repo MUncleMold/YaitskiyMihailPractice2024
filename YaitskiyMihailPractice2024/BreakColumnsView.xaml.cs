@@ -29,7 +29,7 @@ namespace YaitskiyMihailPractice2024
         }
         private void Button_click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Skibidi");
+            MessageBox.Show("sqqqqq");
         }
         
     }

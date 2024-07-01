@@ -55,7 +55,8 @@ namespace Yaitskiy_Mihail_Practice
             Document doc = uiapp.ActiveUIDocument.Document;
             ColumnPickFilter colFilter = new ColumnPickFilter();
             Selection sel = uiapp.ActiveUIDocument.Selection;
-            IList<Reference> columns = sel.PickObjects(ObjectType.Element, "Выберите колонны для разрезания");
+            
+            IList<Reference> columns = sel.PickObjects(ObjectType.Element, colFilter, "Выберите колонны для разрезания");
             IList<Element> columns2 = new List<Element>();
             
             foreach (Reference re in columns)
@@ -136,6 +137,7 @@ namespace Yaitskiy_Mihail_Practice
 
                         }
                         colToB = new ColumnToBreak(el1, cutCounter);
+
                         view.columnsToBreak.Add(colToB);
                         doc.Delete(el1.Id);
                     }
