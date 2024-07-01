@@ -58,6 +58,7 @@
     <Compile Include="BreakColumnsView.xaml.cs">
       <DependentUpon>BreakColumnsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ColumnPickFilter.cs" />
     <Compile Include="ColumnToBreak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

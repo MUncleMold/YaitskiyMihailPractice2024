@@ -32,22 +32,7 @@ namespace Yaitskiy_Mihail_Practice
             el2.Location.Rotate(Line.CreateBound(xYZ, center), point1.AngleTo(point2));
 
         }
-        public class ColumnPickFilter : ISelectionFilter
-        {
-            public bool AllowElement(Element elem)
-            {
-                if (elem.Category.BuiltInCategory == BuiltInCategory.OST_StructuralColumns)
-                {
-                    return true;
-                }
-                return false;
-            }
-
-            public bool AllowReference(Reference reference, XYZ position)
-            {
-                return false;
-            }
-        }
+        
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             UIApplication uiapp = commandData.Application;
